@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="main-body">
+    <h1 id="title">Coding Group - Survey Form</h1>
+<p id="description">We appreciate your effort to take part in our survey<br>
+Together we can create a better platform to all the learners</p>
+<div id="container">
+
+<form id="survey-form" action="#">
+   
+    <label for="name" id="name-label" >Name : </label><br>
+    <input type="text" id="name"  name="name" required placeholder="Name"><br><br>
+
+    <label for="email" id="email-label" >Email : </label><br>
+    <input type="email" id="email" name="email" required placeholder="Email ID"><br><br>
+
+    <label for="number" id="number-label" >Age(Optional) : </label><br>
+    <input type="number" id="number" name="age" min="18" max="65" placeholder="Age"><br><br>
+
+
+
+    <label for="dropdown">Select your current role : </label><br>
+    <select id="dropdown" name="roles" value="role">
+        <option value="Learner">Learner</option><br>
+        <option value="fullTimeJob">Full Time Job</option><br>
+        <option value="FullTimeLearner">Full time Learner</option><br>
+        <option value="PreferNotToSay">Prefer not to say</option><br>
+        <option value="Others">Others</option><br><br>
+    </select><br><br>
+
+    <label>Would you recommend Coding Group to others?</label> <br>
+    <input type="radio" name="recommend" value="Definitely">
+    <label for="recommend">Definitely</label><br>
+
+    <input type="radio" name="recommend" value="NotSure">
+    <label for="recommend">Maybe</label><br>
+
+    <input type="radio" name="recommend" value="Never">
+    <label for="recommend" >Never</label>
+    <br><br>
+
+    <label for="favFeature">Select your favourite feature of Coding Group : </label> <br>
+    <select id="dropdown2" name="favFeature">
+        <option value="Modules">Module wise learning</option>
+        <option value="Coding Quiz">Coding Quiz</option>
+        <option value="Assignments">Assignments</option>
+        <option value="Forum">Community Forum</option>
+        <option value="Videos">Video Tutorial</option>
+    </select>
+    <br><br>
+ 
+
+    <label>Which field do you feel like getting improved? </label> <br>
+ 
+    <input type="checkbox" id="ui" name="improvements" value="ui">
+    <label for="ui">User Interface</label><br>
+
+    <input type="checkbox" id="projects" value="projects">
+    <label for="projects">Projects</label><br>
+
+    <input type="checkbox" id="forums" value="Forums">
+    <label for="forums">Community Forums</label><br>
+
+    <input type="checkbox" id="videos" value="videos">
+    <label for="videos">Video Tutorials</label><br>
+
+    <input type="checkbox" id="meetups" value="meetups">
+    <label for="meetups">Meetups</label><br>
+
+    <input type="checkbox" id="courses" value="courses">
+    <label for="courses">Additional Courses</label><br>
+     
+    <br><br>
+    <label>Please feel free to post your comments or suggestions : </label><br>
+    <textarea name="suggestions" rows="10" cols="25"></textarea><br><br>
+    
+    <button type="submit" id="submit" value="submit">Submit</button>
+</form>
+</div>
+</div> 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
